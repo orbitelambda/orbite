@@ -8,8 +8,8 @@
   <!-- ✅ rel="me" for Mastodon verification -->
   <link rel="me" href="https://mastodon.social/@orbite">
 
-  <!-- ⏱ Instant redirect -->
-  <meta http-equiv="refresh" content="0;url=https://mastodon.social/@orbite">
+  <!-- ⏱ Redirect after 5 seconds -->
+  <meta http-equiv="refresh" content="5;url=https://mastodon.social/@orbite">
 
   <style>
     body {
@@ -17,6 +17,12 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #111;
       color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
     }
     .header {
       width: 100%;
@@ -24,6 +30,7 @@
       background-image: url('https://files.mastodon.social/accounts/headers/110/770/582/384/056/412/original/5a0c5ad05c323f35.jpg');
       background-size: cover;
       background-position: center;
+      border-bottom: 2px solid #333;
     }
     .content {
       display: flex;
@@ -51,6 +58,15 @@
     .info a:hover {
       text-decoration: underline;
     }
+    .quote {
+      padding: 20px;
+      font-style: italic;
+      font-size: 1em;
+      color: #ccc;
+    }
+    .quote p {
+      margin: 0.5em 0;
+    }
   </style>
 
   <!-- 
@@ -63,12 +79,25 @@
 
 </head>
 <body>
-  <div class="header"></div>
-  <div class="content">
-    <div class="avatar"></div>
-    <div class="info">
-      <div>Orbite</div>
-      <a rel="me" href="https://mastodon.social/@orbite">Mastodon ✅</a>
+  <div class="container">
+    <div class="header"></div>
+    <div class="content">
+      <div class="avatar"></div>
+      <div class="info">
+        <div>Orbite</div>
+        <a rel="me" href="https://mastodon.social/@orbite">Mastodon ✅</a>
+      </div>
+    </div>
+    <div class="quote">
+      <p>🇬🇧 Anonymity is not the absence of identity, but the freedom to be it without others' projections.</p>
+      <p>🇩🇪 Anonymität ist nicht das Fehlen einer Identität, sondern die Freiheit, sie ohne fremde Projektionen zu leben.</p>
+      <p>🇫🇷 L’anonymat n’est pas l’absence d’identité, mais la liberté d’être soi sans les projections des autres.</p>
+      <p>🇪🇸 El anonimato no es la ausencia de identidad, sino la libertad de serlo sin las proyecciones ajenas.</p>
+      <p>🇯🇵 匿名性とは、アイデンティティの欠如ではなく、他人の投影なしにそれである自由である。</p>
+      <p>🇫🇮 Anonymiteetti ei ole identiteetin puuttumista, vaan vapautta olla se ilman muiden heijastuksia.</p>
+      <p>🇷🇴 Anonimatul nu este absența identității, ci libertatea de a fi ea fără proiecțiile altora.</p>
+      <p>🇰🇿 Анонимдік — бұл жеке тұлғаның жоқтығы емес, басқалардың проекцияларынсыз болу еркіндігі.</p>
+      <p>🕌 Анонимлык — шәхес булмау түгел, ә башкаларның көтелмәләре булмаган халәттә шәхес булу иреге.</p>
     </div>
   </div>
 </body>

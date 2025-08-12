@@ -8,8 +8,8 @@
   <!-- ✅ rel="me" for Mastodon verification -->
   <link rel="me" href="https://mastodon.social/@orbite">
 
-  <!-- ⏱ Redirect after 5 seconds -->
-  <meta http-equiv="refresh" content="5;url=https://mastodon.social/@orbite">
+  <!-- ⏱ Redirect after 15 seconds -->
+  <meta http-equiv="refresh" content="15;url=https://mastodon.social/@orbite">
 
   <style>
     body {
@@ -23,32 +23,28 @@
     .container {
       max-width: 600px;
       width: 100%;
-    }
-    .header {
-      width: 100%;
-      height: 200px;
-      background-image: url('https://files.mastodon.social/accounts/headers/110/770/582/384/056/412/original/5a0c5ad05c323f35.jpg');
-      background-size: cover;
-      background-position: center;
-      border-bottom: 2px solid #333;
+      padding-top: 40px;
     }
     .content {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       padding: 20px;
+      justify-content: center;
+      flex-direction: column;
     }
     .avatar {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       border: 3px solid #fff;
-      margin-right: 20px;
       background-image: url('https://files.mastodon.social/accounts/avatars/110/770/582/384/056/412/original/87dd39e69c6ed62a.jpg');
       background-size: cover;
       background-position: center;
+      margin-bottom: 15px;
     }
     .info {
       font-size: 1.2em;
+      text-align: center;
     }
     .info a {
       color: #ffd700;
@@ -83,7 +79,6 @@
 </head>
 <body>
   <div class="container">
-    <div class="header"></div>
     <div class="content">
       <div class="avatar"></div>
       <div class="info">

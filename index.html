@@ -8,7 +8,7 @@
   <!-- ✅ Mastodon verification -->
   <link rel="me" href="https://mastodon.social/@orbite">
 
-  <!-- ⏱ Redirect after 5 seconds (change to 3 if you want faster) -->
+  <!-- Redirect after 5 seconds -->
   <meta http-equiv="refresh" content="5;url=https://mastodon.social/@orbite">
 
   <style>
@@ -16,9 +16,9 @@
       --bg: #0b0b0f;
       --fg: #e8e8ee;
       --muted: #8a8a96;
-      --accent: #a6e3b8; /* soft green */
+      --accent: #9ae6b4;
       --gold: #ffd700;
-      --ring: #2a2a36;
+      --btn-bg: #1e1e27;
     }
     html, body {
       height: 100%;
@@ -27,167 +27,76 @@
       color: var(--fg);
       font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
     }
-    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
-    a:hover { border-color: var(--accent); }
-    main { max-width: 760px; margin: 6vh auto; padding: 0 20px; }
-
-    .top {
-      display: flex; justify-content: space-between; align-items: center;
-      margin-bottom: 14px;
-    }
-    .title { font-size: 18px; margin: 0; letter-spacing: 0.2px; color: var(--muted); }
-    .continue { font-weight: 600; }
-
-    .profile {
-      display: flex; align-items: center; gap: 14px;
-      padding: 14px 0 4px;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    main { max-width: 720px; margin: 6vh auto; padding: 0 20px; }
     .avatar {
       width: 88px; height: 88px; border-radius: 50%;
-      background-image: url("https://files.mastodon.social/accounts/avatars/110/770/582/384/056/412/original/cea2605c0f138e3f.gif");
-      background-size: cover; background-position: center;
-      outline: 2px solid var(--ring);
-      box-shadow: 0 0 0 3px rgba(255,255,255,0.03) inset;
-      flex: 0 0 auto;
+      background: url("https://files.mastodon.social/accounts/avatars/110/770/582/384/056/412/original/cea2605c0f138e3f.gif") center/cover no-repeat;
+      border: 2px solid var(--fg);
+      margin: 0 auto 12px;
     }
-    .who { display: grid; gap: 4px; }
-    .who .name { font-size: 20px; font-weight: 600; }
-    .who .mastodon a { color: var(--gold); font-weight: 700; }
+    h1 { text-align: center; font-size: 20px; color: var(--muted); margin: 0 0 10px; }
+    .quote { margin-top: 20px; }
+    .lang { margin-bottom: 16px; }
+    .lang h4 { color: var(--muted); margin: 0 0 4px; font-size: 0.9rem; }
+    .lang p { margin: 0; font-style: italic; }
 
-    .quote {
-      margin-top: 12px;
-      padding: 12px 0 4px;
-      border-top: 1px solid #14141a;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px 16px;
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
     }
-    .lang h4 {
-      margin: 12px 0 4px;
-      font-size: 0.9rem; color: var(--muted); font-weight: 600;
+    .btn {
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
     }
-    .lang p {
-      margin: 0;
-      font-style: italic;
-      color: #cfcfd7;
-    }
-
-    details { margin-top: 12px; }
-    summary { cursor: pointer; color: var(--muted); }
-    .muted { color: var(--muted); }
-
-    .footer {
-      margin-top: 16px;
-      display: flex; gap: 18px; flex-wrap: wrap;
-      font-weight: 600;
-    }
-    .note { margin-top: 10px; font-size: 14px; color: var(--muted); }
+    .btn-masto { background: var(--accent); color: #000; }
+    .btn-kofi { background: var(--gold); color: #000; }
+    .btn-site { background: var(--btn-bg); color: var(--fg); border: 1px solid var(--muted); }
+    .btn:hover { opacity: 0.85; }
+    .note { margin-top: 10px; font-size: 14px; color: var(--muted); text-align: center; }
   </style>
-
-  <!--
-    👀 Curious, are you?
-    Welcome, source-diver. You’ve found the hidden whisper of Orbite.
-    No treasure—just a wink from the void and a binary smile. 💾
-
-    👀 Neugierig?
-    Hallo, Quellcode-Forscher. Kein Schatz hier—nur ein Zwinkern aus der Dunkelheit und ein binäres Lächeln. 💾
-
-    👽 Transmission ends.
-  -->
 </head>
 <body>
   <main>
-    <div class="top">
-      <p class="title">Orbite — Mastodon ✅</p>
-      <a class="continue" href="https://mastodon.social/@orbite" rel="me" aria-label="Continue to Mastodon">Continue now →</a>
-    </div>
+    <div class="avatar"></div>
+    <h1>Orbite — Mastodon ✅</h1>
 
-    <section class="profile">
-      <div class="avatar" role="img" aria-label="Orbite avatar"></div>
-      <div class="who">
-        <div class="name">Orbite</div>
-        <div class="mastodon"><a href="https://mastodon.social/@orbite" rel="me">Mastodon ✅</a></div>
-      </div>
-    </section>
-
-    <section class="quote" aria-label="Multilingual thesis">
+    <div class="quote">
       <div class="lang">
         <h4>🗣️ EN</h4>
         <p>Anonymity is not the absence of identity, but the freedom to be it without others’ projections.</p>
       </div>
-
-      <div class="lang">
-        <h4>🍺 DE</h4>
-        <p>Anonymität ist nicht das Fehlen von Identität, sondern die Freiheit, sie ohne die Projektionen anderer zu leben.</p>
-      </div>
-
       <div class="lang">
         <h4>🥖 FR</h4>
         <p>L’anonymat n’est pas l’absence d’identité, mais la liberté d’être soi sans les projections des autres.</p>
       </div>
-
       <div class="lang">
         <h4>💃 ES</h4>
         <p>El anonimato no es la ausencia de identidad, sino la libertad de serlo sin las proyecciones ajenas.</p>
       </div>
-
       <div class="lang">
         <h4>🗾 JA</h4>
         <p>匿名性とは、アイデンティティの欠如ではなく、他者の投影なしにそれとして在る自由だ。</p>
       </div>
-
-      <div class="lang">
-        <h4>❄️ FI</h4>
-        <p>Anonymiteetti ei ole identiteetin puuttumista, vaan vapautta olla se ilman toisten projisointeja.</p>
-      </div>
-
-      <div class="lang">
-        <h4>🐎 KZ</h4>
-        <p>Анонимдік — бұл болмыстың жоқтығы емес, басқалардың проекцияларынсыз өз болмыңда болу еркіндігі.</p>
-      </div>
-
-      <div class="lang">
-        <h4>🕌 TT</h4>
-        <p>Анонимлык — шәхес юклык түгел, ә башкаларның проекцияләреннән азат булып үзең булу иреге.</p>
-      </div>
-
       <div class="lang">
         <h4>🧕 AR</h4>
         <p>إخفاء الهوية ليس انعدام الهوية، بل حرية تجسيدها دون إسقاطات الآخرين.</p>
       </div>
-
-      <div class="lang">
-        <h4>🍝 IT</h4>
-        <p>L’anonimato non è l’assenza di identità, ma la libertà di esserla senza le proiezioni altrui.</p>
-      </div>
-
-      <div class="lang">
-        <h4>🪔 HI</h4>
-        <p>गुमनामी पहचान का अभाव नहीं, बल्कि उसे दूसरों के प्रक्षेपणों से मुक्त होकर जीने की स्वतंत्रता है।</p>
-      </div>
-
-      <div class="lang">
-        <h4>🛸 glitch</h4>
-        <p class="muted">&*&^@($&__'99* (* n$### (**&& _+( *(&^#@!, *&//., t0@@@# &)!^&&%#(*&^^^^^^][][].</p>
-      </div>
-
-      <div class="lang">
-        <h4>💾 BIN</h4>
-        <p class="muted">01000001 01101110 01101111 01101110 01111001 01101101 01101001 01110100 01111001 00100000 01101001 01110011 00100000 01101110 01101111 01110100 00100000 01100001 01100010 01110011 01100101 01101110 01100011 01100101 00100000 01101111 01100110 00100000 01101001 01100100 01100101 01101110 01110100 01101001 01110100 01111001 00101100 00100000 01100010 01110101 01110100 00100000 01110100 01101000 01100101 00100000 01100110 01110010 01100101 01100101 01100100 01101111 01101101 00100000 01110100 01101111 00100000 01100010 01100101 00100000 01101001 01110100 00100000 01110111 01101001 01110100 01101000 01101111 01110101 01110100 00100000 01101111 01110100 01101000 01100101 01110010 01110011 00100111 00100000 01110000 01110010 01101111 01101010 01100101 01100011 01110100 01101001 01101111 01101110 01110011 00101110</p>
-      </div>
-    </section>
-
-    <details>
-      <summary>glitch/bin (more)</summary>
-      <div class="muted">The noise is part of the signal.</div>
-    </details>
-
-    <div class="footer">
-      <a href="https://ko-fi.com/orbitelambda">Support → Ko‑fi</a>
-      <a href="https://drive.google.com/drive/folders/1g8LhipwFF4iReqT9cvWRCNN5anfcfj1k?usp=sharing">Portfolio → Drive</a>
     </div>
 
-    <p class="note">Redirecting to Mastodon in 5 seconds. If it doesn’t, click “Continue now”.</p>
+    <div class="buttons">
+      <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">Mastodon →</a>
+      <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">Support on Ko‑fi</a>
+      <a href="https://orbitelambda.github.io/orbite/" class="btn btn-site">About / Portfolio</a>
+    </div>
+
+    <p class="note">Redirecting to Mastodon in 5 seconds… or choose a button above.</p>
   </main>
 </body>
 </html>

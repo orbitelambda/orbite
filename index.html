@@ -8,9 +8,6 @@
   <!-- ✅ Mastodon verification -->
   <link rel="me" href="https://mastodon.social/@orbite">
 
-  <!-- Redirect after 5 seconds -->
-  <meta http-equiv="refresh" content="5;url=https://mastodon.social/@orbite">
-
   <style>
     :root {
       --bg: #0b0b0f;
@@ -29,20 +26,9 @@
     }
     a { color: var(--accent); text-decoration: none; }
     main { max-width: 720px; margin: 6vh auto; padding: 0 20px; }
-    .avatar {
-      width: 88px; height: 88px; border-radius: 50%;
-      background: url("https://files.mastodon.social/accounts/avatars/110/770/582/384/056/412/original/cea2605c0f138e3f.gif") center/cover no-repeat;
-      border: 2px solid var(--fg);
-      margin: 0 auto 12px;
-    }
-    h1 { text-align: center; font-size: 20px; color: var(--muted); margin: 0 0 10px; }
-    .quote { margin-top: 20px; }
-    .lang { margin-bottom: 16px; }
-    .lang h4 { color: var(--muted); margin: 0 0 4px; font-size: 0.9rem; }
-    .lang p { margin: 0; font-style: italic; }
 
     .buttons {
-      margin-top: 20px;
+      margin-bottom: 24px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
@@ -57,13 +43,30 @@
     }
     .btn-masto { background: var(--accent); color: #000; }
     .btn-kofi { background: var(--gold); color: #000; }
-    .btn-site { background: var(--btn-bg); color: var(--fg); border: 1px solid var(--muted); }
+    .btn-wall { background: var(--btn-bg); color: var(--fg); border: 1px solid var(--muted); }
     .btn:hover { opacity: 0.85; }
-    .note { margin-top: 10px; font-size: 14px; color: var(--muted); text-align: center; }
+
+    .avatar {
+      width: 88px; height: 88px; border-radius: 50%;
+      background: url("https://files.mastodon.social/accounts/avatars/110/770/582/384/056/412/original/cea2605c0f138e3f.gif") center/cover no-repeat;
+      border: 2px solid var(--fg);
+      margin: 0 auto 12px;
+    }
+    h1 { text-align: center; font-size: 20px; color: var(--muted); margin: 0 0 10px; }
+    .quote { margin-top: 20px; }
+    .lang { margin-bottom: 16px; }
+    .lang h4 { color: var(--muted); margin: 0 0 4px; font-size: 0.9rem; }
+    .lang p { margin: 0; font-style: italic; }
   </style>
 </head>
 <body>
   <main>
+    <div class="buttons">
+      <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">Mastodon →</a>
+      <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">Support on Ko‑fi</a>
+      <a href="https://drive.google.com/drive/folders/1g8LhipwFF4iReqT9cvWRCNN5anfcfj1k?usp=sharing" class="btn btn-wall">Wallpapers</a>
+    </div>
+
     <div class="avatar"></div>
     <h1>Orbite — Mastodon ✅</h1>
 
@@ -89,14 +92,6 @@
         <p>إخفاء الهوية ليس انعدام الهوية، بل حرية تجسيدها دون إسقاطات الآخرين.</p>
       </div>
     </div>
-
-    <div class="buttons">
-      <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">Mastodon →</a>
-      <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">Support on Ko‑fi</a>
-      <a href="https://orbitelambda.github.io/orbite/" class="btn btn-site">About / Portfolio</a>
-    </div>
-
-    <p class="note">Redirecting to Mastodon in 5 seconds… or choose a button above.</p>
   </main>
 </body>
 </html>

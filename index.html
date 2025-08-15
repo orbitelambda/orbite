@@ -1,78 +1,100 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ссылки Orbite</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      padding: 40px;
-      text-align: center;
-    }
+  <meta charset="utf-8">
+  <title>Orbite — Anonymity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
+  <!-- ✅ Mastodon verification -->
+  <link rel="me" href="https://mastodon.social/@orbite">
+
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --fg: #e8e8ee;
+      --muted: #8a8a96;
+      --accent: #9ae6b4;
+      --gold: #ffd700;
+      --btn-bg: #1e1e27;
+      --ubuntu: #e95420;
     }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    main { max-width: 720px; margin: 6vh auto; padding: 0 20px; }
 
     .buttons {
+      margin-bottom: 24px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 12px;
-      margin-top: 30px;
+      justify-content: center;
     }
-
     .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: 500;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 8px;
-      border: none;
-      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-block;
     }
+    .btn-masto { background: var(--accent); color: #000; }
+    .btn-kofi { background: var(--gold); color: #000; }
+    .btn-wall { background: var(--btn-bg); color: var(--fg); border: 1px solid var(--muted); }
+    .btn-ubuntu { background: var(--ubuntu); color: #fff; }
+    .btn:hover { opacity: 0.85; }
 
-    .btn:hover {
-      opacity: 0.9;
-      transform: scale(1.03);
+    .avatar {
+      width: 88px; height: 88px; border-radius: 50%;
+      background: url("https://files.mastodon.social/accounts/avatars/110/770/582/384/056/412/original/cea2605c0f138e3f.gif") center/cover no-repeat;
+      border: 2px solid var(--fg);
+      margin: 0 auto 12px;
     }
-
-    /* Mastodon */
-    .btn-masto {
-      background: #6364ff;
-      color: #fff;
-    }
-
-    /* Ko-fi */
-    .btn-kofi {
-      background: #29abe0;
-      color: #fff;
-    }
-
-    /* Wallpapers */
-    .btn-wall {
-      background: #444;
-      color: #fff;
-    }
-
-    /* Ubuntu Discourse */
-    .btn-ubuntu {
-      background: #e95420; /* Ubuntu orange */
-      color: #fff;
-    }
+    h1 { text-align: center; font-size: 20px; color: var(--muted); margin: 0 0 10px; }
+    .quote { margin-top: 20px; }
+    .lang { margin-bottom: 16px; }
+    .lang h4 { color: var(--muted); margin: 0 0 4px; font-size: 0.9rem; }
+    .lang p { margin: 0; font-style: italic; }
   </style>
 </head>
 <body>
-  <h1>Ссылки Orbite 🌐</h1>
-  <div class="buttons">
-    <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">Mastodon</a>
-    <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">Support on Ko‑fi</a>
-    <a href="https://drive.google.com/drive/folders/1g8LhipwFF4iReqT9cvWRCNN5anfcfj1k?usp=sharing" class="btn btn-wall">Wallpapers</a>
-    <a href="https://discourse.ubuntu.com/u/orbitelambda/summary" class="btn btn-ubuntu">Ubuntu Discourse</a>
-  </div>
+  <main>
+    <div class="buttons">
+      <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">Mastodon →</a>
+      <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">Support on Ko‑fi</a>
+      <a href="https://drive.google.com/drive/folders/1g8LhipwFF4iReqT9cvWRCNN5anfcfj1k?usp=sharing" class="btn btn-wall">Wallpapers</a>
+      <a href="https://discourse.ubuntu.com/u/orbitelambda/summary" class="btn btn-ubuntu">Ubuntu Discourse</a>
+    </div>
+
+    <div class="avatar"></div>
+    <h1>Orbite — Mastodon ✅</h1>
+
+    <div class="quote">
+      <div class="lang">
+        <h4>🗣️ EN</h4>
+        <p>Anonymity is not the absence of identity, but the freedom to be it without others’ projections.</p>
+      </div>
+      <div class="lang">
+        <h4>🥖 FR</h4>
+        <p>L’anonymat n’est pas l’absence d’identité, mais la liberté d’être soi sans les projections des autres.</p>
+      </div>
+      <div class="lang">
+        <h4>💃 ES</h4>
+        <p>El anonimato no es la ausencia de identidad, sino la libertad de serlo sin las proyecciones ajenas.</p>
+      </div>
+      <div class="lang">
+        <h4>🗾 JA</h4>
+        <p>匿名性とは、アイデンティティの欠如ではなく、他者の投影なしにそれとして在る自由だ。</p>
+      </div>
+      <div class="lang">
+        <h4>🧕 AR</h4>
+        <p>إخفاء الهوية ليس انعدام الهوية، بل حرية تجسيدها دون إسقاطات الآخرين.</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

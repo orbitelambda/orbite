@@ -41,6 +41,13 @@
       border-radius: 6px;
       font-weight: bold;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn img {
+      height: 16px;
+      width: 16px;
       display: inline-block;
     }
     .btn-masto { background: var(--accent); color: #000; }
@@ -66,10 +73,18 @@
 <body>
   <main>
     <div class="buttons">
-      <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">Mastodon →</a>
-      <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">Support on Ko‑fi</a>
-      <a href="https://drive.google.com/drive/folders/1g8LhipwFF4iReqT9cvWRCNN5anfcfj1k?usp=sharing" class="btn btn-wall">Wallpapers</a>
-      <a href="https://discourse.ubuntu.com/u/orbitelambda/summary" class="btn btn-ubuntu">Ubuntu Discourse</a>
+      <a href="https://mastodon.social/@orbite" class="btn btn-masto" rel="me">
+        <img src="https://mastodon.social/favicon.ico" alt="Mastodon"> Mastodon
+      </a>
+      <a href="https://ko-fi.com/orbitelambda" class="btn btn-kofi">
+        <img src="https://storage.ko-fi.com/cdn/kofi5.png" alt="Ko-fi"> Support on Ko‑fi
+      </a>
+      <a href="https://drive.google.com/drive/folders/1g8LhipwFF4iReqT9cvWRCNN5anfcfj1k?usp=sharing" class="btn btn-wall">
+        <img src="https://ssl.gstatic.com/docs/doclist/images/drive_icon_16dp.png" alt="Drive"> Wallpapers
+      </a>
+      <a href="https://discourse.ubuntu.com/u/orbitelambda/summary" class="btn btn-ubuntu">
+        <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="Ubuntu"> Ubuntu Discourse
+      </a>
     </div>
 
     <a href="https://mastodon.social/@orbite" rel="me">
